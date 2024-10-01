@@ -1,3 +1,6 @@
+
+/*===================Testing Code Css===================*/
+
 .sky{
     background-image: url("./Car_Animation_Img/sky.jpg  ");
     background-size: cover;
@@ -5,12 +8,13 @@
     height: 100vh;
     width: 100vw;
     position: fixed;
+    overflow: hidden;
 }
 .road-img{
     left: 0;
     bottom: 0;
     position: absolute;
-    animation: my 100s infinite ;
+    animation: my 50s infinite ;
 
 }
 .city{
@@ -18,19 +22,20 @@
     bottom: 300px;
     left: 0;
     width: 100vw;
-    animation: my 100s infinite ;
+    animation: city 100s infinite ;
+    background-repeat: repeat-x;
 }
 @keyframes my {
 
-    0%{
-
-        transform: translateX(0%);
-
+    100%{
+        transform: translateX(-3400px);
     }
 
-    100%{
+}
+@keyframes city {
 
-        transform: translateX(-100%);
+    100%{
+        transform: translateX(-1440px);
     }
 
 }
@@ -45,21 +50,18 @@
     position: absolute;
     left: 650px;
     bottom: 150px;
-    animation: wheel 10s infinite alternate;
+    animation: wheel 5s infinite linear;
 }
 .wheel2{
     width: 150px;
     position: absolute;
     left: 1080px;
     bottom: 150px;
-    animation: wheel 10s infinite alternate ;
+    animation: wheel 5s infinite linear ;
 }
 @keyframes wheel {
-    0%{
-        transform: rotate(200deg);
-    }
     100%{
-        transform: rotate(0deg);
+        transform: rotate(360deg);
     }
 
 }
