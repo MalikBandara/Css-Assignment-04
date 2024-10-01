@@ -1,0 +1,65 @@
+.sky{
+    background-image: url("./Car_Animation_Img/sky.jpg  ");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+}
+.road-img{
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    animation: my 100s infinite ;
+
+}
+.city{
+    position: absolute ;
+    bottom: 300px;
+    left: 0;
+    width: 100vw;
+    animation: my 100s infinite ;
+}
+@keyframes my {
+
+    0%{
+
+        transform: translateX(0%);
+
+    }
+
+    100%{
+
+        transform: translateX(-100%);
+    }
+
+}
+.car{
+    width: 700px;
+    position: absolute;
+    left: 600px;
+    bottom: 150px;
+}
+.wheel{
+    width: 150px;
+    position: absolute;
+    left: 650px;
+    bottom: 150px;
+    animation: wheel 10s infinite alternate;
+}
+.wheel2{
+    width: 150px;
+    position: absolute;
+    left: 1080px;
+    bottom: 150px;
+    animation: wheel 10s infinite alternate ;
+}
+@keyframes wheel {
+    0%{
+        transform: rotate(200deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+
+}
